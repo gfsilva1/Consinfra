@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # get 'tasks', to: 'tasks#index'
   # post 'tasks', to: 'tasks#create'
   # get 'tasks/new', to: 'tasks#new', as: :new_task
@@ -7,5 +8,7 @@ Rails.application.routes.draw do
   # patch 'tasks/:id', to: 'tasks#update'
   # delete 'tasks/:id', to: 'tasks#destroy'
 
+  root to: "tasks#index"
+  
   resources :tasks
 end

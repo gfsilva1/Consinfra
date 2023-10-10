@@ -1,0 +1,11 @@
+development: 
+  cloud_name: "gtex"
+  api_key: "535479267449687"
+  api_secret: "YDVvsarYXWbppLfnsx4Psbl0hVI"
+  secure: true
+
+production:
+  cloud_name: "gtex"
+  api_key: "535479267449687"
+  api_secret: "YDVvsarYXWbppLfnsx4Psbl0hVI"
+  secure: true

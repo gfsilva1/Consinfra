@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, only: :home
 
   def index
     @tasks = Task.all
@@ -13,9 +14,16 @@ class TasksController < ApplicationController
   end
 
   def create
+    @tasks = Task.all
     task = Task.new(task_params)
-    task.save
-    redirect_to tasks_path
+    if task.save
+      respond_to do |format|
+        format.turbo_stream
+        format.html { redirect_to tasks_path, notice: "Task criada." }
+      end
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def edit
@@ -38,6 +46,6 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:title, :details, :completed)
+    params.require(:task).permit(:title, :details, :completed, :photo)
   end
 end

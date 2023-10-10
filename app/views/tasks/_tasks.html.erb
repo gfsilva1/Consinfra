@@ -1,0 +1,18 @@
+<%= turbo_frame_tag id="tasks" do%>
+    <div id="tasks">
+        <% @tasks.each do |task| %>
+            <div>
+            <%= image_tag('logo.png', size: '50x50') %>
+            <strong><%= link_to task.title, task_path(task.id), class: "tasks-list", data: { turbo_frame: "_top" } %></strong>
+            <% if task.completed? %>
+                <i class="fa-solid fa-square-check fa-beat-fade" style="color: #4772bd;"></i>
+            <% else %>
+                <i class="fa-regular fa-square fa-bounce"></i>
+            <% end %>
+            <%= link_to task_path(task.id), data: {turbo_method: :delete, turbo_confirm: "Delete #{task.title}?"} do %>
+                <i class="fa-regular fa-trash-can"></i>
+            <% end %>
+            </div>
+        <% end %>
+    </div>
+<% end %>
