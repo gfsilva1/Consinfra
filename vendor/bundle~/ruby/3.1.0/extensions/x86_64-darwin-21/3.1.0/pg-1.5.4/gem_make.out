@@ -1,5 +1,5 @@
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/pg-1.5.4/ext
-/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231019-12220-2ahe88.rb extconf.rb
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/pg-1.5.4/ext
+/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231019-21035-fl9o47.rb extconf.rb
 Calling libpq with GVL unlocked
 checking for pg_config... yes
 Using config values from /usr/local/bin/pg_config
@@ -25,10 +25,10 @@ checking for C99 variable length arrays... yes
 creating extconf.h
 creating Makefile
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/pg-1.5.4/ext
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/pg-1.5.4/ext
 make DESTDIR\= clean
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/pg-1.5.4/ext
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/pg-1.5.4/ext
 make DESTDIR\=
 compiling gvl_wrappers.c
 compiling pg.c
@@ -58,7 +58,7 @@ compiling pg_util.c
 linking shared-object pg_ext.bundle
 ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/pg-1.5.4/ext
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/pg-1.5.4/ext
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20231019-12220-5v4lxf
+/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20231019-21035-taaijj
 installing pg_ext libraries

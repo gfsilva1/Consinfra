@@ -1,16 +1,16 @@
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
-/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231009-86196-uid0bx.rb extconf.rb
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231019-21035-xod5l1.rb extconf.rb
 creating Makefile
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
 make DESTDIR\= clean
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
 make DESTDIR\=
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20231009-86196-4iw7ik/bootsnap
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20231019-21035-rl3548/bootsnap

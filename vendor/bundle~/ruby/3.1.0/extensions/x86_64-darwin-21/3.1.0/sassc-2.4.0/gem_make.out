@@ -1,11 +1,11 @@
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/sassc-2.4.0/ext
-/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231009-86196-xxdntl.rb extconf.rb
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/sassc-2.4.0/ext
+/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231019-21035-a3xo1h.rb extconf.rb
 creating Makefile
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/sassc-2.4.0/ext
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/sassc-2.4.0/ext
 make DESTDIR\= clean
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/sassc-2.4.0/ext
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/sassc-2.4.0/ext
 make DESTDIR\=
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
@@ -86,6 +86,6 @@ compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.bundle
 ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/sassc-2.4.0/ext
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/sassc-2.4.0/ext
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20231009-86196-hhwvoa/sassc
+/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20231019-21035-lcczrs/sassc

@@ -1,11 +1,11 @@
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/bcrypt-3.1.19/ext/mri
-/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231009-35304-lcv4fn.rb extconf.rb
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/bcrypt-3.1.19/ext/mri
+/Users/guilherme.t.silva/.rbenv/versions/3.1.2/bin/ruby -I /Users/guilherme.t.silva/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231019-21035-yu3v8k.rb extconf.rb
 creating Makefile
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/bcrypt-3.1.19/ext/mri
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/bcrypt-3.1.19/ext/mri
 make DESTDIR\= clean
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/bcrypt-3.1.19/ext/mri
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/bcrypt-3.1.19/ext/mri
 make DESTDIR\=
 compiling bcrypt_ext.c
 bcrypt_ext.c:41:38: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
@@ -26,6 +26,6 @@ char *crypt_r(const char *key, const char *setting, struct crypt_data *data)
 linking shared-object bcrypt_ext.bundle
 ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
-current directory: /Users/guilherme.t.silva/Documents/gui/consinfra/rails-task-manager/vendor/bundle~/ruby/3.1.0/gems/bcrypt-3.1.19/ext/mri
+current directory: /Users/guilherme.t.silva/Documents/gui/setair/setair/vendor/bundle~/ruby/3.1.0/gems/bcrypt-3.1.19/ext/mri
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20231009-35304-pb954t
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20231019-21035-49xi9d
