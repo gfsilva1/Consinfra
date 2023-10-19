@@ -10,10 +10,8 @@
 
   <hr>
 
-  <%= turbo_frame_tag id="complete" do%>
-    <%= link_to edit_task_path(@task.id) do %>
-      <i class="fa-solid fa-pencil fa-beat"></i>
-    <% end %>
+  <%= link_to edit_task_path(@task.id) do %>
+    <i class="fa-solid fa-pencil fa-beat"></i>
   <% end %>
   
   <%= link_to tasks_path do %>
