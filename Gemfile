@@ -15,6 +15,8 @@ gem 'pg'
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+gem "pry"
+
 #simple_form
 gem "simple_form"
 

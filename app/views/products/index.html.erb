@@ -1,1 +1,37 @@
-<%= @products %>
+<%= form_with url: products_path, method: :get, data: { turbo_frame: "results", controller: "form", action: "input->form#submit"} do |f| %>
+	<%= f.label :nome %>
+	<%= f.text_field :query, value: params[:query] %>
+	<%= f.submit "Find" %>
+<% end %>
+
+<%= turbo_frame_tag id="results" do %>
+	<div>
+		<h1>Dufrio</h1>
+			<%  @dufrio.each do |product| %>
+				<div>
+					<%= product[0] %>
+					<%= product[1] %>
+				</div>
+			<% end %>
+	</div>
+
+	<div>
+		<h1>Climario</h1>
+			<%  @climario.each do |product| %>
+				<div>
+					<%= product[0] %>
+					<%= product[1] %>
+				</div>
+			<% end %>
+	</div>
+
+	<div>
+		<h1>Poloar</h1>
+			<%  @poloar.each do |product| %>
+				<div>
+					<%= product[0] %>
+					<%= product[1] %>
+				</div>
+			<% end %>
+	</div>
+<% end %>
