@@ -1,6 +1,6 @@
 <%= @project.name %>
 <h4>Medições</h4>
 <%  @work_progress.each do |progress| %>
-    <h4><%= progress.supplier.name %></h4>
+    <h4><%= link_to progress.supplier.name, project_supplier_work_progress_path(params[:id], progress.supplier.id) %></h4>
     <h4><%= progress.total %>%</h4>
 <% end %>
