@@ -1,0 +1,6 @@
+<%= @project.name %>
+<h4>Medições</h4>
+<%  @work_progress.each do |progress| %>
+    <h4><%= progress.supplier.name %></h4>
+    <h4><%= progress.total %>%</h4>
+<% end %>

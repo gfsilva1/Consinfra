@@ -12,4 +12,10 @@ Rails.application.routes.draw do
   
   resources :tasks
   resources :products
+  resources :projects do
+    resources :suppliers do
+      resources :work_progress do
+      end
+    end
+  end
 end
