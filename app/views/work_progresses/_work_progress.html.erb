@@ -1,0 +1,4 @@
+	<% @project.work_progresses.each do |work| %>
+		<p><%= work.total %>%</p>
+		<%= link_to "Editar", edit_project_supplier_work_progress_path(work.project_id, work.supplier.id)%>
+	<% end %>

@@ -1,0 +1,5 @@
+<%= form_with(model:[ :project, :supplier, @work_progress]) do |f| %>
+  <%= f.label :total  %>
+  <%= f.text_field :total %>
+  <%= f.submit %>
+<% end %>

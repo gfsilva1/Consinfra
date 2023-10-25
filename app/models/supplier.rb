@@ -1,3 +1,4 @@
 class Supplier < ApplicationRecord
-  has_many :work_progress
+  belongs_to :project
+  has_many :work_progresses
 end

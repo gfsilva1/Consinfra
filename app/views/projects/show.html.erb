@@ -1,6 +1,12 @@
 <%= @project.name %>
-<h4>Medições</h4>
-<%  @work_progress.each do |progress| %>
-    <h4><%= link_to progress.supplier.name, project_supplier_work_progress_path(params[:id], progress.supplier.id) %></h4>
-    <h4><%= progress.total %>%</h4>
+
+<h4>Fornecedores</h4>
+
+<%  @project.suppliers.each do |supplier| %>
+	<%= supplier.name %>
+	<%= supplier.category %>
+<% end %>
+
+<%= turbo_frame_tag id="edit-supplier" do %>
+	<%= render "work_progresses/work_progress" %>
 <% end %>

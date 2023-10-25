@@ -1,3 +1,4 @@
 class Project < ApplicationRecord
-	has_many :work_progress
+	has_many :suppliers
+	has_many :work_progresses
 end

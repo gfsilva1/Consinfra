@@ -12,12 +12,10 @@ Rails.application.routes.draw do
   
   resources :tasks
   resources :products
-  resources :suppliers
   
   resources :projects do
-    resources :suppliers do
-      resources :work_progress do
-      end
+    resources :suppliers, only: [:new, :create] do
+      resources :work_progresses, only: [:new, :create, :edit, :update]
     end
   end
 end
