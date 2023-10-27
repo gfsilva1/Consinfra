@@ -1,12 +1,32 @@
-<%= @project.name %>
 
-<h4>Fornecedores</h4>
+<div class="projects">
+	<%= @project.name %>
 
-<%  @project.suppliers.each do |supplier| %>
-	<%= supplier.name %>
-	<%= supplier.category %>
-<% end %>
+	<h4>Fornecedores</h4>
+	<h3>Adicionar fornecedor</h4>
 
-<%= turbo_frame_tag id="edit-supplier" do %>
-	<%= render "work_progresses/work_progress" %>
-<% end %>
+	<%= form_tag(new_project_work_progress_path(params[:id]), method: "get") do %>
+		<%= select("supplier", "supplier_id", Supplier.all.collect {|p| [ p.name, p.id ] }) %>
+		<%= submit_tag("adicionar") %>
+	<% end %>
+
+		<div class="supplier-progress">
+			<div class="list">
+				<%  @project.suppliers.each do |supplier| %>
+					<h1><%= supplier.name %></h1>
+				<% end %>
+			</div>
+
+	
+				<div class="list">
+					<% @project.work_progresses.each do |work| %>
+						<%= turbo_frame_tag id="edit-supplier" do %>	
+							<h1><%= work.total %>%<%= link_to "editar", edit_project_work_progress_path(:project_id => work.project_id, :id => work.id) %></h1>
+						<% end %>
+					<% end %>
+				</div>
+		</div>
+
+
+</div>
+

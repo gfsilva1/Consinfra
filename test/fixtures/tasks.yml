@@ -2,10 +2,12 @@
 
 one:
   title: MyString
-  details: MyText
-  completed: false
+  description: MyString
+  projects: one
+  suppliers: one
 
 two:
   title: MyString
-  details: MyText
-  completed: false
+  description: MyString
+  projects: two
+  suppliers: two

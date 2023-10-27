@@ -37,3 +37,19 @@
    width: 500px;
    margin: 0 auto;
  }
+
+ .projects {
+   display: flex;
+   flex-direction: column;
+   margin-left: 200px;
+ }
+
+ .list {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .supplier-progress {
+   display: flex;
+   justify-content: space-evenly;
+ }

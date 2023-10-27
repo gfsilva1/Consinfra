@@ -4,8 +4,12 @@
       <%= f.input :title, label: 'Título' %>
     </div>
 
+    <div class="form-group"> 
+      <%= f.input :projects_id, collection: Project.all, label: 'Obra' %>
+    </div>
+
     <div class="form-group">
-      <%= f.input :details, label: 'Descrição' %>
+      <%= f.input :description, label: 'Descrição' %>
     </div>
   <% end %>
     <%= f.input :photo, as: :file, label: 'Foto' %>

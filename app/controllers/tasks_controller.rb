@@ -14,8 +14,10 @@ class TasksController < ApplicationController
   end
 
   def create
-    @tasks = Task.all
+    project = Project.find(params[:task][:projects_id])
     task = Task.new(task_params)
+    task.projects_id = project.id
+  
     if task.save
       respond_to do |format|
         format.turbo_stream
@@ -46,6 +48,6 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:title, :details, :completed, :photo)
+    params.require(:task).permit(:title, :description, :completed, :photo, :projects_id)
   end
 end

@@ -8,14 +8,17 @@ Rails.application.routes.draw do
   # patch 'tasks/:id', to: 'tasks#update'
   # delete 'tasks/:id', to: 'tasks#destroy'
 
-  root to: "tasks#index"
+  root to: "pages#home"
   
-  resources :tasks
   resources :products
+  resources :suppliers, only: [:index, :show, :new, :create]
   
   resources :projects do
-    resources :suppliers, only: [:new, :create] do
-      resources :work_progresses, only: [:new, :create, :edit, :update]
+    resources :suppliers do
+      resources :tasks
     end
+
+    resources :work_progresses, only: [:new, :create, :edit, :update]
+
   end
 end

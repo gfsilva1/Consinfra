@@ -1,14 +1,14 @@
 class WorkProgressesController < ApplicationController
   def new
     @project = Project.find(params[:project_id])
-    @supplier = Supplier.find(params[:supplier_id])
+    @supplier = Supplier.find(params[:supplier][:supplier_id])
     @work_progress = WorkProgress.new
   end
 
   def create 
     @work_progress = WorkProgress.new(work_progress_params)
 		project = Project.find(params[:project_id])
-    supplier = Supplier.find(params[:supplier_id])
+    supplier = Supplier.find(params[:work_progress][:supplier])
 		@work_progress.project_id = project.id
     @work_progress.supplier_id = supplier.id
 		@work_progress.save
